@@ -21,4 +21,19 @@ Bom:
 Ruim:
 * É comum uma requisição passar por toda a cadeia e não ser tratada
 
+## Exemplo Prático
+Sobre o exemplo prático, como o Chain of Responsability é uma requisição que é repartida em várias outras pequenas, pensou-se em um projeto de aprovação de orçamento que é feito por níveis, cada nível aprovando um orçamento até um determinado limite:
+
+* Seller - aprova até 1.000;
+* Manager - aprova até 5.000;
+* Director - aprova até 50.000;
+* CEO - aprova qualquer orçamento.
+
+Se o orçamento é maior do que seu limite, o orçamento é passado para o próximo na hierarquia até que algum nível trate desse orçamento.
+
+Dessa forma criou-se o budget_handler que é onde tem os métodos que todas as demais o classes vão usar, onde analisa o budget e retorna o budget ou passa para o próximo nível tratar dependendo do seu limite.
+
+Customer é o cliente padrão que diz o orçamento e espera a sua aprovação por algum dos níveis.
+
+E as demais classes são os níveis, onde são colocados seus limites, podendo retorna o budget tratado ou passar para o próximo na hierarquia.
 
