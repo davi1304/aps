@@ -13,7 +13,7 @@ Ele define uma interface de mais alto nível permitindo que um subsistema utiliz
 * São muitas as dependências entre clientes e classes de implementação.
 * Há o interesse em dividir seus subsistemas em camadas.
 
-# Consequências
+## Consequências
 * Torna o sistema mais fácil de se usar, protegendo os clientes dos componentes do sistema, reduzindo o número de objetos com que terão que lidar.
 * Promove fraco acoplamento entre os subsistemas e seus clientes.
 * Não evita que as aplicações possam acessar as subclasses do subsistema diretamente, pode-se escolher entre a facilidade de uso ou a generalidade.
