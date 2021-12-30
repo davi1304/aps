@@ -1,4 +1,4 @@
 # APS
-## DESIGNER PATTERNS: Chain of responsability and Facade
+## DESIGNER PATTERNS: Chain of responsability e Facade
 
 ## GRUPO: DAVI CESAR E KELRYSON WENDRIX
